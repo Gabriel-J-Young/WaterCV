@@ -15,4 +15,10 @@ __pycache__/
 CalibrationInfo.txt
 Debug/
 Release/
+.ninja_deps
+.ninja_log
+*.cmake
+water_color_avg.txt
+water_percent.txt
+*.ninja
 
