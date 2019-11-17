@@ -9,7 +9,7 @@ function refreshData()
     // let text = readTextFile("data.txt");
     // readResponseText(text);
     let waterPctText = readTextFile("water_percent.txt");
-    bubbling = 1 - readWaterPercent(waterPctText);
+    bubbling = 1 - readWaterPercent(waterPctText), 4;
     console.log(bubbling);
     let waterColorText = readTextFile("water_color_avg.txt");
     readWaterColorAvg(waterColorText);
@@ -19,12 +19,17 @@ function refreshData()
     updateColorStatus();
 }
 
+function round(value, decimals) 
+{
+    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
 function updateBubblingStatus()
 {
     minBubbling = document.getElementById("minBub").value / 100;
     maxBubbling = document.getElementById("maxBub").value / 100;
 
-    document.getElementById("bubVal").innerHTML = (100 * bubbling) + "%";
+    document.getElementById("bubVal").innerHTML = round((100 * bubbling), 2) + "%";
     if(bubbling < minBubbling || bubbling > maxBubbling)
     {
         document.getElementById("bubStatus").innerHTML = "Warning";
