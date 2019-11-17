@@ -10,6 +10,7 @@ CMakeFiles/
 *.so
 *.a
 *.avi
+*.MOV
 __pycache__/
 CalibrationInfo.txt
 Debug/
