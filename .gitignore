@@ -1,0 +1,16 @@
+/build
+/.vscode
+CMakeFiles/
+.vs
+*.jpg
+*.png
+*.vcxproj
+*.sln
+*.exe
+*.so
+*.a
+__pycache__/
+CalibrationInfo.txt
+Debug/
+Release/
+
