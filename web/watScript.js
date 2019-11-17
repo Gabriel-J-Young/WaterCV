@@ -9,7 +9,7 @@ function refreshData()
     // let text = readTextFile("data.txt");
     // readResponseText(text);
     let waterPctText = readTextFile("water_percent.txt");
-    bubbling = 1 - readWaterPercent(waterPctText), 4;
+    bubbling = 1 - readWaterPercent(waterPctText);
     console.log(bubbling);
     let waterColorText = readTextFile("water_color_avg.txt");
     readWaterColorAvg(waterColorText);
