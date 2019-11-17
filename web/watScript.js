@@ -112,9 +112,9 @@ function readWaterColorAvg(text)
         }
     }
     console.log(sumsList);
-    let redHexStr = hexFormat(Math.round(parseFloat(sumsList[0])));
+    let blueHexStr = hexFormat(Math.round(parseFloat(sumsList[0])));
     let greenHexStr = hexFormat(Math.round(parseFloat(sumsList[1])));
-    let blueHexStr = hexFormat(Math.round(parseFloat(sumsList[2])));
+    let redHexStr = hexFormat(Math.round(parseFloat(sumsList[2])));
     console.log(Math.round(parseFloat(sumsList[0])))
     console.log(redHexStr);
     color = "#" + redHexStr + greenHexStr + blueHexStr;
