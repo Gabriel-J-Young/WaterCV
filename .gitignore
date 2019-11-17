@@ -15,4 +15,8 @@ __pycache__/
 CalibrationInfo.txt
 Debug/
 Release/
+Testing/
+.ninja_deps
+.ninja_log
+*.cmake
 
