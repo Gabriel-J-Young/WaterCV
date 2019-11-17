@@ -45,9 +45,9 @@ int main(){
 
 	//textfiles to write to
 	ofstream water_percent;
-	water_percent.open("water_percent.txt");
+	water_percent.open("D:\\PersonalProgramming\\Hackathons\\11-16-2019\\miniweb\\htdocs\\water_percent.txt");
 	ofstream water_color_avg;
-	water_color_avg.open("water_color_avg.txt");
+	water_color_avg.open("D:\\PersonalProgramming\\Hackathons\\11-16-2019\\miniweb\\htdocs\\water_color_avg.txt");
 
 	//erosion kernal
 	int erosion_size = 10;
@@ -123,7 +123,7 @@ int main(){
 
 		//put anything in write
 		video.write(hsv);
-
+		/*
 		//texture filtering
 		cvtColor(frame, grey, COLOR_BGR2GRAY);
 		//resize(grey, grey, Size(66, 96), 0, 0, INTER_NEAREST);
@@ -145,8 +145,9 @@ int main(){
 		destArray.push_back(dest);
 
 		imshow("texture", dest);
+		*/
 
-		int keyValue = waitKey(1);
+		int keyValue = waitKey(30);
 		if (keyValue == 27)
 		{
 			cout << "Esc key is pressed by user. Stopping the video" << endl;
