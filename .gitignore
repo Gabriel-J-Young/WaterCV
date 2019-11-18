@@ -19,4 +19,8 @@ Testing/
 .ninja_deps
 .ninja_log
 *.cmake
-
+*.ninja
+miniweb/
+*.lnk
+*.txt
+*.manifest
